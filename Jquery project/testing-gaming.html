@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1").css("display","none");
+     $("#one").animate({left: '206px'});
+    $("#two").animate({right: '103px'});
+     $("#three").animate({right: '103px'});
+    
+  });
+  $("#one").click(function(){
+    $("#oneid").css("display","block");
+  })
+  $("#two").click(function(){
+    $("#twoid").css("display","block");
+  })
+  $("#three").click(function(){
+    $("#id").css("display","block");
+  })
+});
+</script>
+<style>
+ .container
+        {
+            height: 100vh;
+            width: auto;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+        }
+h1{
+    
+}
+.one,.two,.three
+{
+background:#98bf21;
+height:100px;width:100px;
+position:relative;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="container">
+    <div class = "one" id="one"><h1 id="oneid">one</h1></div>
+<div class="two" id="two"><h1 id="twoid">two</h1></div>
+<div class="three" id="three"><h1 id="threeid">three</h1></div>
+<button>Start Animation</button>
+</div>
+
+</body>
+</html>

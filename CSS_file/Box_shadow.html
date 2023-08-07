@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content
+        {
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+        img
+        {
+            width: 200px;
+            height: 400px;
+            margin: 20px;
+            filter: drop-shadow(10px 10px 20px black);
+            transition: 0.5s;
+           
+        }
+        img:hover{
+           transform: rotate(3deg);
+        }
+        h1{
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 1px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>
+            This is a Movie.
+        </h1>
+        <img src="./Image/image2.jpg">
+    </div>
+</body>
+</html>

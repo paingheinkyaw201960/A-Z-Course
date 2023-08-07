@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 400px;
+            height: 500px;
+            display: none;
+        }
+        .container
+        {
+            margin-bottom: 30px;
+
+        }
+        button{
+            padding: 10px 15px;
+            font-size: 20px;
+            margin: 5px 10px;
+        }
+        
+        .box
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 10px solid red;
+            background-color: black;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Hello Jquery</h1>
+    <div class="container">
+        <button id="showbtn">Show</button>
+    <button id="hidebtn">hide</button>
+    <button id="togglebtn">Toggle</button>
+    </div>
+    <div class="container1">
+        <button class="animationbtn">Animation
+        </button>
+        <div class="box">
+        </div>
+    </div>
+    <img id="image" src="./Image/image2.jpg">
+    
+</body>
+<script src="./cdnjs.cloudflare.com_ajax_libs_jquery_3.7.0_jquery.min.js"></script>
+<script>
+    // $("#heading").html("Welcome from jquery");
+    // $("#heading").click(function(){
+    //     $(this).hide(1000,function(){
+    //         console.log("Hello Welcome from paing paing");
+    //     })
+    // })
+    $(document).ready(function(){
+        $("#showbtn").click(function(){
+            $("#image").show(1000);
+        })
+        $("#hidebtn").click(function(){
+            $("#image").hide(1000);
+        })
+        $("#togglebtn").click(function(){
+            $("#image").toggle(1000);
+        })
+        $(".animationbtn").click(function(){
+            $(".box").animate({
+                left:"300px"
+            },3000) ;
+        })
+    })
+</script>
+</html>

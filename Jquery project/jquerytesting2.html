@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 title="Paing Paing">Hello Welcome Paing</h1>
+    <input type="text" id="userName">
+    <select id="myfood">
+        <option value="apple">a</option>
+        <option value="banana">b</option>
+        <option value="apple">c</option>
+    </select>
+    <button  class="register">Register</button>
+</body>
+<script src="./cdnjs.cloudflare.com_ajax_libs_jquery_3.7.0_jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("h1").text("update Paing");
+            $("button").click(function(){
+                let name= $("#userName").val();
+               let fruits=$("#myfood").val();
+                $("h1").text(name+" and "+fruits);
+            })
+            // $("#userName").val("Hello welcome");
+            // $("#myfood").val("banana");
+            // $("h1").attr("title","this is update data");
+            // console.log($("h1").attr("title"));
+        })
+        // function getandshow(){
+        //        let name= $("#userName").val();
+        //        let fruits=$("#myfood").val();
+        //       console.log(name+"and"+fruits);
+        //     }
+    </script>
+</html>

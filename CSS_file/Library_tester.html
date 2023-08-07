@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Library/imagehover.css-master/imagehover.css-master/css/imagehover.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+     />
+    <style>
+      img{
+        width: 300px;
+        height:300px;
+      }
+      h3{
+        font-size: 5px;
+      }
+      .content
+      {
+       
+        background-color: bisque;
+        width:700px;
+        margin: auto;
+        height: 300px;
+        text-align: center;
+        line-height: 300px;
+        border-radius: 5px;
+        box-shadow: 10px 10px 20px gray;
+        animation: wobble;
+        animation-duration: 3s;
+      }
+      .slide_in_up
+      {
+          animation: slideInUp;
+          animation-duration: 3s;
+      }
+      .slide_in_down
+      {
+          animation: slideInDown;
+          animation-duration: 3s;
+      }
+      .slide_in_left
+      {
+        
+          animation: slideInLeft;
+          animation-duration: 3s;
+      }
+      .slide_in_right
+      {
+          animation: slideInRight;
+          animation-duration: 3s;
+      }
+    </style>
+</head>
+<body>
+    <img src="./Library/feather/alert-octagon.svg">
+    <figure class="imghvr-shutter-out-diag-1">
+        <img src="./Image/image3.jpg" alt="example-image">
+        <figcaption>
+          <h3 class="ih-fade-down ih-delay-sm ">Oscar Wilde</h3>
+          <p class="ih-zoom-in ih-delay-md">
+            <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+          </p>
+ 
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <div class="content slide_in_up">
+        <h1 class="animate__animated animate__heartBeat">Hello Paing</h1>
+      </div>
+      <div class="content slide_in_down">
+        <h1 class="animate__animated animate__heartBeat">Hello Paing</h1>
+      </div>
+      <div class="content slide_in_left">
+        <h1 class="animate__animated animate__heartBeat">Hello Paing</h1>
+      </div>
+      <div class="content slide_in_right">
+        <h1 class="animate__animated animate__heartBeat">Hello Paing</h1>
+      </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+            background-color: cadetblue;
+        }
+        .content
+        {
+            background-color: white;
+            margin-top: 200px;
+            text-align: center;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+        .content:hover{
+            background-color: dimgrey;
+            color: white;
+        }
+       
+        .button_design:hover
+        {
+            background-color: darkgoldenrod;
+            color: white;
+        }
+        .button_class
+        {
+            text-align: center;
+        }
+        .button_design
+        {
+            font-size: 20px;
+            width: 70%;
+            border: none;
+            border-radius: 20px;
+            padding: 20px 20px;
+            background-color: cornflowerblue;
+        }
+        .content:active{
+            background-color: yellow;
+            color: black;
+        }
+        .input_design
+        {
+            text-align: center;
+        }
+        .text_design:focus
+        {
+            background-color: yellow;
+        }
+        .span_class
+        {
+            text-align: center;
+        }
+        .span_design::before{
+            content: "paingpaing";
+        }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1>Hello World!</h1>
+        
+            <div class="para">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure cupiditate incidunt quod reiciendis architecto, eum exercitationem in ab accusamus, alias fuga repudiandae nam soluta sed facere error corrupti suscipit quas!Lorem</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam totam tempora ab provident dolorum voluptates repudiandae in beatae minima, veritatis aliquam quasi dolore ullam doloremque vitae quis corrupti officiis?</p>
+            </div>
+        </div>
+        <div class="button_class">
+            <button class="button_design">Register</button>
+        </div>
+        <div class="input_design">
+            <input type="text" class="text_design">
+        </div>
+        <div class="span_class">
+            <span class="span_design">Hello World!</span>
+        </div>
+    </body>
+</html>

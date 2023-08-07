@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        body{
+           
+            height: 100vh;
+        }
+        .container
+        {
+            padding: 0;
+            margin: 0;
+            background-color:gold;
+        }
+        .container .nav-bar
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+        }
+        .nav-bar .left-nav-bar{
+            align-self: start;
+        }
+        .nav-bar .right-nav-bar
+        {
+            align-self: end;
+        }
+        .content
+        {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .card-body{
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .card{
+            
+            width: 120px;
+            border: 1px solid black;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            background-color: #eeeeee;
+           
+        }
+        .card .card-body img
+        {
+            width: 100px;
+            height: 180px;
+            padding: 10px 10px;
+            border-radius: 20px;
+        }
+        .card-footer i{
+            padding:5px 5px;
+        }
+        .card-footer button{
+            width: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="left-nav-bar">
+                <span>Home</span>
+                <span>About</span>
+                <span>Services</span>
+                <span>Blog</span>
+                <span>Contact</span>
+            </div>
+            <div class="right-nav-bar">
+                <span>Login</span>
+                <span>Register</span>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="card-body"><img src="./Image/image1.jpg"></div>
+            <div class="card-footer"><i class="fa-solid fa-cart-shopping"></i><button>Buy</button></div>
+        </div>
+        <div class="card">
+            <div class="card-body"><img src="./Image/image2.jpg"></div>
+            <div class="card-footer"><i class="fa-solid fa-cart-shopping"></i><button>Buy</button></div>
+        </div>
+        <div class="card">
+            <div class="card-body"><img src="./Image/image3.jpg"></div>
+            <div class="card-footer"><i class="fa-solid fa-cart-shopping"></i><button>Buy</button></div>
+        </div>
+        <div class="card">
+            <div class="card-body"><img src="./Image/image1.jpg"></div>
+            <div class="card-footer"><i class="fa-solid fa-cart-shopping"></i><button>Buy</button></div>
+        </div>
+        <div class="card">
+            <div class="card-body"><img src="./Image/image2.jpg"></div>
+            <div class="card-footer"><i class="fa-solid fa-cart-shopping"></i><button>Buy</button></div>
+        </div>
+        <div class="card">
+            <div class="card-body"><img src="./Image/image3.jpg"></div>
+            <div class="card-footer"><i class="fa-solid fa-cart-shopping"></i><button>Buy</button></div>
+        </div>
+    </div>
+</body>
+</html>

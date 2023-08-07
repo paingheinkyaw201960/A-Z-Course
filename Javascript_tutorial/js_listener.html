@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title
+        {
+            display: inline-block;  
+            border: 1px solid black;
+            width: 200px;
+            padding: 5%;
+            border: none;
+            font-size: 50px;
+            font-weight: 900;
+            border-radius: 5px;
+            background-color: aqua;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title" class="title">Hello</h1>
+    <button type="button" id="clickbtn1">Red</button>
+    <button type="button" id="clickbtn2">Blue</button>
+</body>
+<script>
+    let title=document.querySelector("#title");
+    document.getElementById("clickbtn1").addEventListener("click",function(){
+        title.innerHTML="RED";
+        title.style.backgroundColor="red";
+        title.style.color="white";
+    })
+    document.getElementById("clickbtn2").addEventListener("click",function(){
+        title.innerHTML="BLUE";
+        title.style.backgroundColor="blue";
+        title.style.color="white";
+    })
+</script>
+</html>

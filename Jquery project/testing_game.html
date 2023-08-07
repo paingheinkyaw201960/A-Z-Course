@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function()
+        {
+            $("h1").css("display","none")
+            $("#one-div").animate({left:'420px'})
+            // $("#two-div").animate({right:'200px'});
+            $("#three-div").animate({right:'420px'});
+        });
+        $("#one-div").click(function(){
+    $("#oneid").css("display","block");
+  })
+  $("#two-div").click(function(){
+    $("#twoid").css("display","block");
+  })
+  $("#three-div").click(function(){
+    $("#threeid").css("display","block");
+    $("#three-div").css("background-color","green").animate({bottom:"30px"},1000,function(){
+        alert("You are correct!")
+    });
+    
+  })
+    })
+</script>
+    <style>
+        .maincontainer
+        {
+            height: 100vh;
+            width: auto;
+            
+        }
+        .container
+        {
+            height: inherit;
+            width: auto;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+        }
+        .one,.two,.three
+        {
+            
+            position: relative;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color: brown;
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+        }
+       
+        button{
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+            width: 100px;
+            height: 30px;
+            
+            background-color: burlywood;
+        }
+        h2{
+            background-color: orange;
+            margin: 0px;
+            padding: 0px;
+            font-size: 50px;
+            text-align: center;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <h2>Please choose three!</h2>
+        <div class="container">
+            <div class="one" id="one-div"><h1 id="oneid">One</h1></div>
+            <div class="two" id="two-div"><h1 id="twoid">Two</h1></div>
+            <div class="three" id="three-div"><h1 id="threeid">Three</h1></div>
+            <button>Shuffle</button>
+        </div>
+    </div>
+    
+    
+   
+    
+</body>
+
+</html>
